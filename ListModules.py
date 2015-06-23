@@ -31,7 +31,7 @@ with open(file_path, 'r') as f:
     #Use the set method to remove duplicate entries, convert the set back to a list, filter the list to remove any empty strings then sort the list alphabetically
     matched = [x for x in sorted(filter(None, list(set(matched))))]
 
-    #Write out each module to a text file and include a comma between each one
+    #Write out each module to a text file on its own line
     with open('modules.txt', 'wb') as output:
         for x in matched:
             output.write(x + "\n")
