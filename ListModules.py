@@ -14,7 +14,7 @@ from tkFileDialog import askopenfilename
 
 root = Tk()
 root.withdraw()
-p = re.compile(r'("(?:esri|dojo|dijit|dojox|dgrid)\/.*",)')
+p = re.compile(r'("(?:esri|dojo|dijit|dojox|dgrid)\/.*")')
 file_path = askopenfilename(filetypes=[("Text files","*.js")], initialdir=(os.path.expanduser('~user')))
 
 with open(file_path, 'r') as f:
