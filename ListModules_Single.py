@@ -1,14 +1,13 @@
 ##NAME: ListModules.py
 ##AUTHOR: Ryan Davison
 ##DATE: 6/22/2015
-##DESCRIPTION: Takes any single JavaScript file and searches it for Dojo and ESRI AMD module names.
+##DESCRIPTION: Takes any single un-minified JavaScript file and searches it for Dojo and ESRI AMD module names.
 ## it then writes those names to a text file called modules.txt. You can use this file as input for
 ## the ArcGIS API for JavaScript Web Optimizer to create a custom build of the API
 ## https://developers.arcgis.com/javascript/jshelp/inside_web_optimizer.html
 
 
-import os
-import re
+import os, re
 from Tkinter import *
 from tkFileDialog import askopenfilename
 
